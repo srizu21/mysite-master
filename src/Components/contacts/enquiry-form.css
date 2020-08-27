@@ -1,0 +1,71 @@
+.form-wrapper {
+  /* width: 400px; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #555;
+  background-color: whitesmoke;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid rgba(70, 106, 95, 0.333);
+  background-color: transparent;
+  /* box-shadow: 0px 10px 50px #555; */
+}
+
+input::placeholder {
+  /* font-size: 1.2em; */
+  font-weight: normal;
+  font-style: italic;
+  /* font-size: 20px; */
+  color: #F8A098;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75em;
+  display: relative;
+}
+
+.qname,
+.subject,
+.email,
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.querysubmit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.querysubmit button {
+  background-color: #922b21;
+  color: #fff;
+  border: 2px solid #922b21;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  border-radius: 30px;
+}
+
+.querysubmit button:hover {
+  color: #258ea6;
+  background-color: #A93226;
+  border: 2px solid #922b21;
+}
